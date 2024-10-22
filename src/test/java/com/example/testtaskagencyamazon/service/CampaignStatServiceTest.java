@@ -111,8 +111,6 @@ class CampaignStatServiceTest {
         assertEquals(campaign.getName(), campaignStatisticResult.getCampaignName());
 
         Integer expectedClicks = campaignReport1.getClicks() + campaignReport2.getClicks();
-        System.out.println(campaignReport1.getClicks());
-        System.out.println(campaignReport2.getClicks());
         assertEquals(expectedClicks, campaignStatisticResult.getClicks());
 
         Integer expectedImpressions = campaignReport1.getImpressions() + campaignReport2.getImpressions();
